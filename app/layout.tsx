@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Banner from '@/components/Banner'
 import Banner2 from '@/components/Banner2'
+// import Navs from '@/components/Navs'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        {/* <Navs /> */}
         <Banner />
         <Banner2 />
         {children}
@@ -30,4 +32,3 @@ export default function RootLayout({
     </html>
   )
 }
-
