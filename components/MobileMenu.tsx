@@ -1,8 +1,5 @@
-
-
 import React from 'react';
 import Link from 'next/link';
-import { FaXmark } from 'react-icons/fa6';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -15,7 +12,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, navItems }) =>
     <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
       <div className='bg-primary p-4'>
         <button onClick={onClose} className='text-white'>
-          <FaXmark size={20} />
         </button>
         <ul className='mt-4 space-y-4'>
           {navItems.map(({ label, path }) => (
