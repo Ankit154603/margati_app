@@ -35,58 +35,43 @@ const Navbar = () => {
 
   return (
     <>
-      {isMobile ? (
-        <nav className='md:hidden bg-primary p-4'>
-          <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
-            <div className='flex space-x-96 items-center'>
-              <Link href='/'>
-                <div className='text-2xl font-semibold flex items-center'>
-                  <Image
-                    src='/logo.png'
-                    alt='logo'
-                    width='400'
-                    height='350'
-                    className='inline-block items-center mr-5'
-                  />
-                </div>
-              </Link>
-              <div className='md:hidden'>
-                <button onClick={toggleMobileMenu} className='text-white'>
-                  {isMobileMenuOpen ? <FaXmark size={20} /> : <FaBars size={20} />}
-                </button>
+      <nav className={`bg-primary ${isMobile ? 'md:hidden' : 'md:px-14'} p-4 max-w-screen-2xl mx-auto text-white`}>
+        <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
+          <Link href='/'>
+            <div className='flex items-center cursor-pointer'>
+              <div className={`text-2xl font-semibold ${isMobile ? 'text-3xl' : ''}`}>
+                <Image
+                  src='/logo.png'
+                  alt='logo'
+                  width={isMobile ? 60 : 40}
+                  height={isMobile ? 52 : 40}
+                />
               </div>
             </div>
-          </div>
-        </nav>
-      ) : (
-        <nav className='bg-primary md:px-14 p-4 max-w-screen-2xl mx-auto text-white'>
-          <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
-            <div className='flex space-x-96 items-center'>
-              <Link href='/'>
-                <div className='text-2xl font-semibold flex items-center'>
-                  <Image
-                    src='/logo.png'
-                    alt='logo'
-                    width='400'
-                    height='350'
-                    className='inline-block items-center mr-5'
-                  />
-                </div>
-              </Link>
-              <ul className='md:flex space-x-12'>
-                {navItems.map(({ label, path }) => (
-                  <li key={label}>
-                    <Link href={path}>
-                      <div className='block hover:text-white-300'>{label}</div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </nav>
+          </Link>
+          {isMobile && (
+            <button onClick={toggleMobileMenu} className='ml-auto'>
+              {isMobileMenuOpen ? <FaXmark size={20} /> : <FaBars size={20} />}
+            </button>
+          )}
+          {!isMobile && (
+            <ul className='md:flex space-x-12'>
+              {navItems.map(({ label, path }) => (
+                <li key={label}>
+                  <Link href={path}>
+                    <div className='block hover:text-gray-300'>{label}</div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </nav>
+
+      {/* Mobile Menu (Client-side rendering) */}
+      {isMobile && (
+        <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} navItems={navItems} />
       )}
-      <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} navItems={navItems} />
       <hr className='border-b-1 border-white' />
     </>
   );
