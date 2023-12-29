@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const Page = () => {
   return (
@@ -32,6 +33,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
