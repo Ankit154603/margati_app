@@ -68,7 +68,7 @@ const Footer = () => {
         Be the first one to know about our updates. Unsubscribe whenever you like.
       </p>
 
-      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:ml-20 md:mr-20 border-medium border-2 border-secondary rounded-md box-border'>
+      <div className='flex flex-col mr-6 ml-6 md:flex-row justify-center items-center gap-10 md:ml-20 md:mr-20 border-medium border-2 border-secondary rounded-md box-border'>
         <p className="mb-4 mt-5 ml-2 text-xl">Enter your Email</p>
         <button className='py-4 px-14 bg-secondary font-semibold text-white rounded-md transition-all duration-400 mb-2 mt-2 md:mr-2'>
           Subscribe

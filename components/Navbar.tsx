@@ -43,8 +43,8 @@ const Navbar = () => {
                 <Image
                   src='/logo.png'
                   alt='logo'
-                  width={isMobile ? 60 : 40}
-                  height={isMobile ? 52 : 40}
+                  width={400}
+                  height={350}
                 />
               </div>
             </div>

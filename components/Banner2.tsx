@@ -6,7 +6,7 @@ const Banner2 = () => {
         <div>
             <h6 className='md:text-4xl text-3xl font bold  text-[#000000] md: flex-row justify-center text-center mb-20'>How does
             <span className='text-secondary'> margati</span> work</h6>
-            <div className=' border-solid border-8 border-[#DCE375] p-4 rounded-3xl'>
+            <div className=' border-solid border-8 border-[#DCE375] p-4 ml-2 mr-4 rounded-3xl'>
           <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                 <div className="md:w-5/5">
                 <h2 className='md:text-4xl font-bold text-[#000000] mb-6 leading-relaxed ml-10'>Create Goal</h2> 
@@ -24,7 +24,7 @@ const Banner2 = () => {
 
                 {/* Banner 3 */}
 
-            <div className=' border-solid border-8 border-[#DCE375] p-4 rounded-3xl mt-28'>
+            <div className=' border-solid border-8 border-[#DCE375] p-4 rounded-3xl ml-2 mr-4 mt-28'>
           <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                 <div className="md:w-5/5">
                 <h2 className='md:text-4xl font-bold text-[#000000] mb-6 leading-relaxed ml-10'>
@@ -46,7 +46,7 @@ const Banner2 = () => {
 
                {/* Banner 4 */}
 
-               <div className=' border-solid border-8 border-[#DCE375] p-4 rounded-3xl mt-28'>
+               <div className=' border-solid border-8 border-[#DCE375] p-4 ml-2 mr-4 rounded-3xl mt-28'>
           <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                 <div className="md:w-5/5">
                 <h2 className='md:text-4xl font-bold text-[#000000] mb-6 leading-relaxed ml-10'>
@@ -72,7 +72,7 @@ const Banner2 = () => {
         <div>
             <h6 className='md:text-4xl text-3xl font bold  text-[#000000] md: flex-row justify-center text-center mb-20'>
             Reviews from people who have used <span className='text-secondary'> margati</span> work</h6>
-            <div className=' border-solid border-8 border-secondary p-4 rounded-2xl text-center'>
+            <div className=' border-solid border-8 border-secondary p-4 rounded-2xl text-center ml-2 mr-3'>
                 <p  className='text-2md text-[#000000] mb-6 ml-10'>Lorem ipsum dolor sit amet consectetur. Vitae odio ut eleifend nec id. Dignissim purus <br /> 
                 convallis aliquam in aliquet. Sapien proin molestie lectus ultricies. Ut mattis facilisis <br />
                 tincidunt et ac volutpat. Malesuada sit ac eu praesent ultricies convallis eget facilisis. <br />
@@ -80,7 +80,7 @@ const Banner2 = () => {
                  </p>
                  <p className='text-2md font-semibold'>Lorem ipsum dolor </p>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center mr-10'>
                 <Image src="/persons.png" alt='logo' width="502" height="448" className='inline-block items-center ml-10 mt-20 mb-20'>
           </Image>
           </div>
