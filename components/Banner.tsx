@@ -9,8 +9,8 @@ const Banner = () => {
                     <h2 className='md:text-5xl text-2xl font bold text-white mb-6 leading-relaxed ml-10'>Make sucess</h2>
                     <h1 className='md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed ml-10'>Simple</h1>
                     <div className='mt-2'>
-                        <button className='py-3 px-8 bg-white font-semibold text-black rounded-xl hover:bg-secondary transition-all duration-400 ml-5'><p>Download on the</p> <h6> App Store</h6></button>
-                        <button className='py-3 px-8 bg-white font-semibold text-black rounded-xl hover:bg-secondary transition-all duration-300 ml-5'><p>Get it on</p> <h6>Google Play</h6></button>
+                        <button className='py-3 px-8 bg-white font-semibold text-black rounded-xl hover:bg-secondary transition-all duration-400 ml-5'><p>Download on the</p><h6>App Store</h6></button>
+                        <button className='py-3 px-8 bg-white font-semibold text-black rounded-xl hover:bg-secondary transition-all duration-300 ml-5'><p>Get it on</p><h6>Google Play</h6></button>
                     </div>
                 </div> 
                 <div className='px-10'>

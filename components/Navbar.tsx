@@ -67,12 +67,12 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-
-      {/* Mobile Menu (Client-side rendering) */}
       {isMobile && (
         <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} navItems={navItems} />
       )}
-      <hr className='border-b-1 border-white' />
+      <div className='bg-primary'>
+        <hr className='mx-24' />
+      </div>
     </>
   );
 };
