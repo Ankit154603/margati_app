@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
-import { FaBars, FaXmark } from 'react-icons/fa6';
+import { FaBars, FaXmark} from 'react-icons/fa6';
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
@@ -70,9 +70,7 @@ const Navbar = () => {
       {isMobile && (
         <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} navItems={navItems} />
       )}
-      <div className='bg-primary'>
-        <hr className='mx-24' />
-      </div>
+        <hr />
     </>
   );
 };

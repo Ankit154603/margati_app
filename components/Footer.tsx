@@ -18,7 +18,7 @@ const Footer = () => {
         Be the first one to know about our updates. Unsubscribe whenever you like.
       </p>
 
-      <div className='flex flex-col md:flex-row justify-center items-center gap-10 border-medium border-2 border-secondary rounded-lg box-border p-2 md:mx-96'>
+      <div className='flex flex-col md:flex-row mr-2 ml-2 justify-center items-center gap-10 border-medium border-2 border-secondary rounded-lg box-border p-2 md:mx-96'>
        <div className='ml-4'>
         <input type="text" className='h-12 rounded-lg pl-4 ' placeholder='Enter Your Email'/>
         </div>
