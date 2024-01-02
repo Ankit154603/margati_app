@@ -123,7 +123,7 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <div className='mt-8 sm:mt-4 shadow-2xl px-4 md:px-10 py-8 rounded-2xl'>
+              <div className='mt-8 sm:mt-4 shadow-2xl px-4 md:px-10 py-8 rounded-2xl ml-4'>
                 <h2 className='md:text-3xl sm:text-2xl font-bold text-[#000000] mb-4 leading-relaxed'>Say something</h2>
                 <div>
                   <div className='border-solid border-2 border-[#DCE375] p-4 rounded-2xl mb-4'>
