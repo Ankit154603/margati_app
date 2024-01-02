@@ -20,7 +20,7 @@ const Footer = () => {
 
       <div className='flex flex-col md:flex-row mr-2 ml-2 justify-center items-center gap-10 border-medium border-2 border-secondary rounded-lg box-border p-2 md:mx-96'>
        <div className='ml-4'>
-        <input type="text" className='h-12 rounded-lg pl-4 ' placeholder='Enter Your Email'/>
+        <input type="text" className='h-12 rounded-lg pl-4' placeholder='Enter Your Email'/>
         </div>
         <button className='py-4 px-14 bg-secondary font-semibold text-white rounded-md transition-all duration-400 mb-2 mt-2 md:mr-2'>
           Subscribe
